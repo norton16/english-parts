@@ -1,26 +1,40 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HeaderBar />
+  <SearchBar />
+  <HeroSection />
+  <SelectMake />
+  <SelectCategory />
+  <FooterBar />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderBar from './components/HeaderBar.vue'
+import SearchBar from './components/SearchBar.vue'
+import HeroSection from './components/HeroSection.vue'
+import SelectMake from './components/SelectMake.vue'
+import SelectCategory from './components/SelectCategory.vue'
+import FooterBar from './components/FooterBar.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderBar,
+    SearchBar,
+    HeroSection,
+    SelectMake,
+    SelectCategory,
+    FooterBar
   }
 }
 </script>
 
-<style>
+<style lang="less">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: verdana, sans-serif;
+  margin: auto;
+  overflow-x: hidden;
+}
+body {
+  margin: 8px 0px;
 }
 </style>
